@@ -1,35 +1,47 @@
 <?php
 /**
  * 这是 Typecho 0.9 系统的一套默认皮肤
- * 
- * @package Typecho Replica Theme 
+ *
+ * @package Typecho Replica Theme
  * @author Typecho Team
  * @version 1.2
  * @link http://typecho.org
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
- $this->need('header.php');
- ?>
+$this->need('header.php');
+?>
+<div class="row">
+    <div class="col s12 m3">
+        <div class="table cover">
+            <?php $this->need('sidebar.php'); ?>
+        </div>
+    </div>
+    <div class="col s12 m9">
+        <div class="post-listing">
+            <div class="col-mb-12 col-8" id="main" role="main">
+                <?php while ($this->next()): ?>
+                    <section class="post">
+                        <header class="post-header">
+                            <p class="post-meta">
+                            <span class="post-date"><?php $this->date('F j, Y'); ?></span>
+                            </p>
+                            <h4>
+                                <a href="<?php $this->permalink() ?>" class="post-title" title="<?php $this->title() ?>"><?php $this->title() ?></a>
+                            </h4>
+                        </header>
+                        <div class="post-description">
+                            <p>
+                                <?php $this->content('- 阅读剩余部分 -'); ?>
+                            </p>
+                        </div>
+                    </section>
+                <?php endwhile; ?>
+                <?php $this->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
+            </div><!-- end #main-->
 
-<div class="col-mb-12 col-8" id="main" role="main">
-	<?php while($this->next()): ?>
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-			<h2 class="post-title" itemprop="name headline"><a itemtype="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
-			<ul class="post-meta">
-				<li itemprop="author" itemscope itemtype="http://schema.org/Person"><?php _e('作者: '); ?><a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a></li>
-				<li><?php _e('时间: '); ?><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></li>
-				<li><?php _e('分类: '); ?><?php $this->category(','); ?></li>
-				<li itemprop="interactionCount"><a itemprop="discussionUrl" href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('评论', '1 条评论', '%d 条评论'); ?></a></li>
-			</ul>
-            <div class="post-content" itemprop="articleBody">
-    			<?php $this->content('- 阅读剩余部分 -'); ?>
-            </div>
-        </article>
-	<?php endwhile; ?>
+            <?php $this->need('footer.php'); ?>
+        </div>
+    </div>
+</div>
 
-    <?php $this->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
-</div><!-- end #main-->
-
-<?php $this->need('sidebar.php'); ?>
-<?php $this->need('footer.php'); ?>
