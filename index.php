@@ -24,7 +24,10 @@ $this->need('header.php');
                     <section class="post">
                         <header class="post-header">
                             <p class="post-meta">
-                            <span class="post-date"><?php $this->date('F j, Y'); ?></span>
+                                <span class="post-date"><?php $this->date('F j, Y'); ?></span>
+                                •
+                                <span class="post-cat"><?php $this->category(','); ?></span>
+
                             </p>
                             <h4>
                                 <a href="<?php $this->permalink() ?>" class="post-title" title="<?php $this->title() ?>"><?php $this->title() ?></a>

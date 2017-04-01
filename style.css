@@ -476,12 +476,3 @@ img.alignright {
 .invisible {
     visibility: hidden;
 }
-
-
-/* add */
-.page-navigator {
-    list-style: none;
-    margin: 25px 0;
-    padding: 0;
-    text-align: center;
-}

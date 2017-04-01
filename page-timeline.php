@@ -41,8 +41,8 @@ $this->need('header.php');
                                     $output .= '</ul><div class="archive-title"> <h4 class="archive-year">'. $year .'</h4></div><ul>'; //输出年份
                                 }
                                 $output .='
-                                          <li><div style="width:60px;float:left;">' . date('m-d', $archives->created) . '</div> <a href="'. $archives->permalink .'">' . $archives->title . '</a></li>
-                                          ';
+                                          <li><div style="width:60px;float:left;">' . date('M d', $archives->created) . '</div><a href="'. $archives->permalink .'">' . $archives->title . '</a></li>
+                                          ';//输出文章
                             endwhile;
                             echo $output;
                             ?>

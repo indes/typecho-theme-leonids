@@ -686,3 +686,8 @@ a.read-more { padding: 5px 8px; }
     display: inline-block;
     margin: 0 4px;
 }
+
+.post-meta .post-cat a{
+    text-transform: uppercase;
+    color: #F5A623;
+}

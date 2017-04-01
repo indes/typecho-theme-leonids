@@ -23,6 +23,13 @@
     <link rel="shortcut icon" href="<?php $this->options->themeUrl('favicon.ico'); ?>">
     <!-- 32x32 -->
     <link rel="shortcut icon" href="<?php $this->options->themeUrl('favicon.png'); ?>">
+
+    <!-- 百度统计代码-->
+    <?php if($this->options->GoogleAnalytics): ?>
+        <script>
+            <?php $this->options->GoogleAnalytics(); ?>
+        </script>
+    <?php endif; ?>
     <!-- 通过自有函数输出HTML头部信息 -->
     <?php $this->header(); ?>
 </head>

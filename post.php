@@ -11,7 +11,7 @@
         <div class="post-listing">
             <div class="col-mb-12 col-8" id="main" role="main">
                 <a class="btn" href= "<?php $this->options->siteUrl(); ?>" >
-                   <- Home
+                    <i class="fa fa-angle-left" aria-hidden="true"></i> Home
                 </a>
                 <!--{% if page.image.feature %}-->
                 <!--<div class="post-image-feature">-->
@@ -34,11 +34,12 @@
                     <header class="post-header">
                         <h1 title="<?php $this->title() ?>"><?php $this->title() ?></h1>
                         <span class="post-meta">
-      <span class="post-date">
-        <?php $this->date('F j, Y'); ?>
-      </span>
-    </span>
-
+                            <span class="post-date">
+                                <?php $this->date('F j, Y'); ?>
+                            </span>
+                            •
+                            <span class="post-cat"><?php $this->category(','); ?></span>
+                        </span>
                     </header>
 
                     <article class="post-content">
