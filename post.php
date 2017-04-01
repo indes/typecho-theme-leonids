@@ -11,7 +11,7 @@
         <div class="post-listing">
             <div class="col-mb-12 col-8" id="main" role="main">
                 <a class="btn" href= "<?php $this->options->siteUrl(); ?>" >
-                    Home
+                   <- Home
                 </a>
                 <!--{% if page.image.feature %}-->
                 <!--<div class="post-image-feature">-->
