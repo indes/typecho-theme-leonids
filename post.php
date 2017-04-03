@@ -47,26 +47,26 @@
                     </article>
                 </div>
 
-                <div class="share-buttons">
-                    <h6>Share on: </h6>
-                    <ul>
-                        <li>
-                            <a href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" class="google-plus btn" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
-                        </li>
-                        <li>
-                            <a href="https://news.ycombinator.com/submitlink?u={{ site.url }}{{ page.url }}" class="hacker-news btn" title="Share on Hacker News"><i class="fa fa-hacker-news"></i><span> Hacker News</span></a>
-                        </li>
-                        <li>
-                            <a href="https://www.reddit.com/submit?url={{ site.url }}{{ page.url }}" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
-                        </li>
-                    </ul>
-                </div><!-- end share-buttons -->
+<!--                <div class="share-buttons">-->
+<!--                    <h6>Share on: </h6>-->
+<!--                    <ul>-->
+<!--                        <li>-->
+<!--                            <a href="https://twitter.com/intent/tweet?text=--><?php //$this->permalink() ?><!--" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <a href="https://www.facebook.com/sharer/sharer.php?u=--><?php //$this->permalink() ?><!--" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <a href="https://plus.google.com/share?url=--><?php //$this->permalink() ?><!--" class="google-plus btn" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <a href="https://news.ycombinator.com/submitlink?u=--><?php //$this->permalink() ?><!--" class="hacker-news btn" title="Share on Hacker News"><i class="fa fa-hacker-news"></i><span> Hacker News</span></a>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <a href="https://www.reddit.com/submit?url=--><?php //$this->permalink() ?><!--" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
 
                 <?php $this->need('comments.php'); ?>
             </div><!-- end #main-->

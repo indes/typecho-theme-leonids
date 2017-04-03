@@ -17,17 +17,24 @@
     <link rel="stylesheet" href="<?php $this->options->themeUrl('./css/main.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('./css/font-awesome.min.css'); ?>">
 <!--    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">-->
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}" />
+
     <!-- Icons -->
-    <!-- 16x16 -->
-    <link rel="shortcut icon" href="<?php $this->options->themeUrl('favicon.ico'); ?>">
-    <!-- 32x32 -->
-    <link rel="shortcut icon" href="<?php $this->options->themeUrl('favicon.png'); ?>">
+    <?php if($this->options->favicon): ?>
+        <link rel="shortcut icon" href="<?php $this->options->favicon();?>">
+
+    <?php else: ?>
+            <!-- 16x16 -->
+        <link rel="shortcut icon" href="<?php $this->options->themeUrl('favicon.ico'); ?>">
+            <!-- 32x32 -->
+        <link rel="shortcut icon" href="<?php $this->options->themeUrl('favicon.png'); ?>">
+    <?php endif; ?>
+
+
 
     <!-- 百度统计代码-->
-    <?php if($this->options->GoogleAnalytics): ?>
+    <?php if($this->options->baidutongji): ?>
         <script>
-            <?php $this->options->GoogleAnalytics(); ?>
+            <?php $this->options->baidutongji(); ?>
         </script>
     <?php endif; ?>
     <!-- 通过自有函数输出HTML头部信息 -->

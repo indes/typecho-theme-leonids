@@ -691,3 +691,293 @@ a.read-more { padding: 5px 8px; }
     text-transform: uppercase;
     color: #F5A623;
 }
+
+/* comments */
+#comments a,#comments a:link,#comments a:visited {
+    color:#1abc9c;
+    text-decoration:none;
+    cursor:pointer;
+    text-transform:none
+}
+#comments .widget-title {
+    display:block;
+    padding-top:3.75rem;
+    color:#1abc9c;
+    font-size:1.5625rem;
+    font-weight:300
+}
+#comments .comment-separator {
+    color:#ccc;
+    margin-top:2rem;
+    padding:0;
+    border-bottom:.125rem dashed rgba(255,255,255,0.08);
+    font-size:.875rem;
+    height:1.375rem
+}
+#comments .comment-tab-current {
+    display:inline-block;
+    height:1.375rem;
+    border-bottom:.125rem solid #1abc9c;
+    font-weight:500
+}
+#comments>.widget-title {
+    margin-bottom:3rem
+}
+#comments .comment-meta a {
+    color:#999 !important;
+    font-size:.75rem;
+    font-weight:400
+}
+#comments .comment-author {
+    display:block;
+    margin-bottom:.1875rem;
+    color:#444;
+    font-size:.875rem;
+    font-weight:500
+}
+#comments .comment-author .avatar {
+    float:left;
+    margin:0 .625rem 0 0;
+    border-radius:3.125rem;
+    width:3.125rem;
+    height:3.125rem;
+    background-color:#f0f0f0
+}
+#comments .comment-author cite {
+    line-height:1.2;
+    font-style:normal
+}
+#comments .comment-awaiting-moderation {
+    float:right;
+    margin-top:-1.25rem;
+    color:#777;
+    font-style:normal
+}
+#comments .comment-body .respond {
+    margin-top:2rem
+}
+#comments>.comment-list>.comment-body>.respond {
+    padding-left:3.75rem
+}
+#comments .respond .cancel-comment-reply {
+    float:right;
+    margin-top:.9375rem;
+    font-size:.813rem
+}
+#comment-form {
+    padding-top:.9375rem;
+    font-size:.875rem
+}
+button,html input[type=button],input[type=reset],input[type=submit] {
+    cursor:pointer;
+    -webkit-appearance:button;
+    overflow:visible
+}
+#comment-form #submit.button {
+    width:100%;
+    margin-top:.625rem
+}
+#comment-form input {
+    height:2rem;
+    background:#fdfdfd;
+    line-height:1rem
+}
+#comment-form input,#comment-form textarea {
+    display:inline-block;
+    padding:.438rem .525rem;
+    border:0;
+    border-radius:.3125rem;
+    /*background:#f8f8f8;*/
+    /*color:#fff;*/
+    border: 1px solid #E9E9E9;
+}
+#comment-form textarea {
+    overflow-y:visible;
+    margin-top:.625rem;
+    width:100%;
+    vertical-align:top
+}
+#comment-form input:focus,#comment-form textarea:focus {
+    outline:0;
+    border-color:#1abc9c
+}
+#comment-form input#submit {
+    cursor:pointer;
+    background:#353333 repeating-linear-gradient(-45deg,#2c2a2a,#2c2a2a 1.125rem,transparent 1.125rem,transparent 2.25rem);
+    color:#9e9e9e;
+    border:.0625rem solid #c8c8c8;
+    margin:0 auto;
+    border-radius:.3125rem;
+    display:block;
+    padding:0 1rem;
+    height:2.2rem;
+    font-weight:500;
+    font-family:inherit;
+    transition:all .5s ease-out
+}
+#comment-form input#submit:hover {
+    color:#1abc9c;
+    border:.0625rem solid #1abc9c
+}
+.comment-children {
+    padding-left:2rem;
+}
+.comment-children .comment-children {
+    padding-left:2rem;
+}
+.comment-content {
+    overflow:hidden;
+    margin-right:3.125rem;
+}
+#comments .page-navigator {
+    padding:1.5625rem 0 0;
+    margin:1.5625rem 0 0;
+    border-top:.125rem dashed rgba(255,255,255,0.08);
+    list-style:none;
+    text-align:center;
+    font-size:1rem
+}
+#comments .page-navigator li {
+    display:inline-block;
+    margin:0 .3125rem .3125rem 0
+}
+#comments .page-navigator a {
+    display:inline-block;
+    height:3.125rem;
+    width:3.125rem;
+    border:.0625rem dashed rgba(255,255,255,0.18);
+    margin-right:.125rem;
+    line-height:3.125rem;
+    border-radius:100%;
+    font-size:.75rem;
+    font-weight:500
+}
+#comments .page-navigator a:hover {
+    background:#3d3b3b
+}
+#comments .page-navigator .current a {
+    background:#1abc9c;
+    color:#fff;
+    border-color:#1abc9c
+}
+#comments .comment-list,.comment-list ol {
+    margin:0;
+    padding:0;
+    list-style:none
+}
+#comments>.comment-list {
+    margin-top:.625rem
+}
+#comments>.comment-list>.comment-body {
+    padding-bottom:.5rem
+}
+#comments>.comment-list>.comment-body>.comment-children>.comment-list {
+    border-left:.25rem solid rgba(255,255,255,0.08);
+    padding-left:.625rem
+}
+#comments .comment-list li.comment-body {
+    margin-top:1rem
+}
+#comments .comment-list li.comment-level-even {
+    /*background:#2c2a2a*/
+}
+#comments .comment-list li .comment-reply {
+    float:right;
+    margin-top:-1.875rem;
+    font-size:.813rem
+}
+#comments .comment-content {
+    padding:.625rem 0 0 0;
+    word-wrap:break-word;
+    line-height:1.5;
+    font-size:.9375rem;
+    border-bottom: solid 1px #f5f5f5;
+}
+#comments .comment-mail-me {
+    float:right;
+    position:relative;
+    top:-22px;
+    height:0;
+    white-space:nowrap;
+    right:0
+}
+#comments .comment-mail-me input {
+    height:auto;
+    width:auto;
+    min-width:unset
+}
+#comments .comment-mail-me label {
+    line-height:1.6;
+    font-weight:400
+}
+#comments .respond {
+    margin-top:3rem
+}
+#comments .comment-body.comment-by-author>.comment-author cite.fn:after {
+    content:"博主";
+    margin-left:.375rem;
+    font-size:.75rem;
+    color:#fff;
+    background:rgba(255,255,255,.35);
+    border-radius:.25rem;
+    padding:.0625rem .1875rem
+}
+#comments .avatar {
+    position:relative
+}
+#comments .comment-content img {
+    max-height:18rem
+}
+@media(max-width:79.8125rem) {
+    #comments #author,#comments #mail,#comments #url {
+        width:32.9%
+    }
+    #comment-form {
+        white-space:nowrap
+    }
+}@media(max-width:62rem) {
+    #comments input {
+        margin-bottom:.3125rem;
+        min-width:32.5%
+    }
+    #comments #author,#comments #mail {
+        width:49.6%
+    }
+    #comment-form {
+        white-space:normal
+    }
+    #comments #url {
+        width:100%
+    }
+    #index .post .more {
+        opacity:1
+    }
+    #header,.post-title,.post-meta {
+        text-align:left
+    }
+}@media(min-width:79.875rem) {
+    #comments input {
+        width:auto
+    }
+    #comment-form {
+        white-space:nowrap
+    }
+    #comments #author,#comments #mail,#comments #url {
+        width:32.89%
+    }
+}@media(max-width:38.125rem) {
+    #comments #author,#comments #mail,#comments #url {
+        width:100%
+    }
+    #comment-form {
+        white-space:normal
+    }
+    #comments>.comment-list>.comment-body>.comment-children {
+        padding-left:2rem
+    }
+    #comments .comment-author .avatar {
+        border-radius:1.875rem;
+        width:1.875rem;
+        height:1.875rem;
+        margin-bottom:1.25rem
+    }

@@ -37,9 +37,9 @@ $this->need('header.php');
                                                 •
                                                 <span class="post-cat"><?php $this->category(','); ?></span>
                                             </p>
-                                            <h4>
+                                            <h1>
                                                 <a href="<?php $this->permalink() ?>" class="post-title" title="<?php $this->title() ?>"><?php $this->title() ?></a>
-                                            </h4>
+                                            </h1>
                                         </header>
                                         <div class="post-description">
                                             <p>
