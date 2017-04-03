@@ -1,11 +1,11 @@
 <?php
 /**
- * 这是 Typecho 0.9 系统的一套默认皮肤
  *
- * @package Typecho Replica Theme
- * @author Typecho Team
- * @version 1.2
- * @link http://typecho.org
+ *
+ * @package leondis
+ * @author indes
+ * @version 1.0
+ * @link https://github.com/indes/typecho-theme-leonids
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;

@@ -20,9 +20,22 @@ function themeConfig($form) {
     $form->addInput($user_name);
     $user_bio = new Typecho_Widget_Helper_Form_Element_Text('user_bio', NULL, NULL, _t('侧边栏显示用户简介'), _t('留空则使用站点简介'));
     $form->addInput($user_bio);
+
     //百度统计代码
     $baidutongji = new Typecho_Widget_Helper_Form_Element_Textarea('baidutongji', NULL, NULL, _t('百度统计代码'), _t('填写你的百度统计代码，不需要script标签'));
     $form->addInput($baidutongji);
+
+    //disqus
+    $DisqusShortname = new Typecho_Widget_Helper_Form_Element_Text('DisqusShortname', NULL, NULL, _t('Disqus服务'), _t('填写你的DisqusShortname，留空则使用默认评论系统'));
+    $form->addInput($DisqusShortname);
+
+    //sharebuttons
+    $sharebuttons = new Typecho_Widget_Helper_Form_Element_Radio('sharebuttons',
+        array('enable' => _t('启用'),
+            'disable' => _t('禁止'),
+        ),
+        'enable', _t('分享按钮'), _t('默认开启'));
+    $form->addInput($sharebuttons);
 
     //social-links
 //    $socialweibo = new Typecho_Widget_Helper_Form_Element_Text('socialweibo', NULL, NULL, _t('输入微博链接'), _t('在这里输入微博链接,支持 http:// 或 https:// 或 //'));
