@@ -1,14 +1,21 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php if($this->options->DisqusShortname): ?>
     <?php if($this->allow('comment')): ?>
+        <a class="btn" id="load-disqus" href="javascript:;" onclick="disqusload();" style="">
+            <i class="fa fa-comments-o" aria-hidden="true"></i> 参与评论
+        </a>
         <div id="disqus_thread"></div>
         <script>
-            (function() { // DON'T EDIT BELOW THIS LINE
+            function disqusload() {
+                document.getElementById("load-disqus").getAttributeNode("style").value="display:none";
                 var d = document, s = d.createElement('script');
                 s.src = 'https://<?php $this->options->DisqusShortname() ?>.disqus.com/embed.js';
                 s.setAttribute('data-timestamp', +new Date());
                 (d.head || d.body).appendChild(s);
-            })();
+            };
+        </script>
+        <script>
+
         </script>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <?php else: ?>

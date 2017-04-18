@@ -12,8 +12,10 @@ Typecho主题，移植自Jekyll主题[leonids](https://github.com/renyuanz/leoni
 #### Added
 - Disqus
 - Share Buttom
+
 #### Changed
 - 修改404页面
 
-
-
+### [v1.0.2] - 2017.04.18
+#### Changed
+- 修改disqus评论加载方式
